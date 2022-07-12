@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout">
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/custom_red"
+        android:layout_centerInParent="true"
+        android:text="A"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/custom_orange"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/A"
+        android:layout_toRightOf="@+id/A"
+        android:text="B"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/custom_yellow"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/A"
+        android:layout_toLeftOf="@+id/A"
+        android:text="C"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/custom_green"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/A"
+        android:layout_toRightOf="@+id/A"
+        android:text="D"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+</RelativeLayout>

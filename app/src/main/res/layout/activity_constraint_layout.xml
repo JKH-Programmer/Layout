@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayout">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AppCompatButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/custom_red"
+        android:text="Button1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AppCompatButton2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/custom_orange"
+        android:text="Button2"
+        app:layout_constraintLeft_toLeftOf="@id/AppCompatButton1"
+        app:layout_constraintRight_toRightOf="@id/AppCompatButton1"
+        app:layout_constraintTop_toBottomOf="@id/AppCompatButton1"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AppCompatButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/custom_yellow"
+        android:text="Button3"
+        app:layout_constraintLeft_toRightOf="@id/AppCompatButton1"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AppCompatButton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/custom_green"
+        android:text="Button4"
+        app:layout_constraintLeft_toRightOf="@id/AppCompatButton1"
+        app:layout_constraintTop_toBottomOf="@id/AppCompatButton3"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AppCompatButton5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/custom_blue"
+        android:text="Button5"
+        app:layout_constraintLeft_toRightOf="@id/AppCompatButton1"
+        app:layout_constraintTop_toBottomOf="@id/AppCompatButton2"></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
